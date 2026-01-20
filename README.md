@@ -1,7 +1,4 @@
 # 🏆 30-Day Coding Test Challenge (Zero to Advanced)
-
-> **"코드는 거짓말을 하지 않는다."** >
-
 <br>
 
 ## 📌 Overview
