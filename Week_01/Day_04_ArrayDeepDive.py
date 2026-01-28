@@ -28,3 +28,31 @@ print(arr1) # [1, 2, [3, 4]] -> 2차원이 됨 (주의!)
 arr1 = [1, 2]
 arr1.extend(arr2) # 또는 arr1 += arr2
 print(arr1) # [1, 2, 3, 4] -> 우리가 보통 원하는 것
+
+
+# 연습문제
+# 문제 1. 배열 자르기 (Slicing 활용)
+def solution(numbers, num1, num2):
+    return numbers[num1 : num2 + 1]
+
+# 테스트: [1, 2, 3, 4, 5], 1, 3 입력 시 -> [2, 3, 4] 나와야 함
+print(solution([1, 2, 3, 4, 5], 1, 3))
+
+
+# 문제 2. 배열 원소의 길이 (List Comprehension 활용 추천)
+def solution(strlist):
+    answer = [len(i) for i in strlist]
+    return answer
+
+# 테스트: ["We", "are", "the", "world!"] -> [2, 3, 3, 6] 나와야 함
+print(solution(["We", "are", "the", "world!"]))
+
+
+# 문제 3. 가장 큰 수 찾기 (기초 내장함수)
+def solution(array):
+    max_val = max(array)       # 가장 큰 수 찾기
+    idx = array.index(max_val) # 그 수가 몇 번째에 있는지 찾기
+    return [max_val, idx]
+
+# 테스트: [1, 8, 3] -> [8, 1] 나와야 함 (8이 가장 크고, 1번 인덱스에 있음)
+print(solution([1, 8, 3]))
