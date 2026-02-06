@@ -1,0 +1,8 @@
+# SELECT 가져올_컬럼명
+# FROM 테이블명
+# WHERE 조건
+# ORDER BY 정렬기준;
+
+# SELECT MAX(DATETIME) AS 시간
+# FROM ANIMAL_INS;
+
